@@ -3,9 +3,12 @@ package com.os.operando.sample;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 
 import com.os.operadno.moo.Moo;
 import com.os.operando.sample.sample.R;
+
+import timber.log.Timber;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,5 +40,23 @@ public class MainActivity extends AppCompatActivity {
         Moo.w(TAG, new Exception("wtf test"));
 
         Log.d(TAG, Moo.getStackTraceString(new Exception("test getStackTraceString")));
+    }
+
+    public void onTimber(View v) {
+        long s = System.currentTimeMillis();
+        for (int i = 0; i < 10000; i++) {
+            Timber.d("test");
+        }
+        long e = System.currentTimeMillis();
+        Log.d(TAG, "time : " + (e - s) + "ms");
+    }
+
+    public void onMoo(View v) {
+        long s = System.currentTimeMillis();
+        for (int i = 0; i < 10000; i++) {
+            Moo.d(TAG, "test");
+        }
+        long e = System.currentTimeMillis();
+        Log.d(TAG, "time : " + (e - s) + "ms");
     }
 }
