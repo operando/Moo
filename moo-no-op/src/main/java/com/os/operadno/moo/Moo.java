@@ -1,6 +1,6 @@
 package com.os.operadno.moo;
 
-public class Moo {
+public final class Moo {
 
     public static void v(String tag, String msg) {
     }

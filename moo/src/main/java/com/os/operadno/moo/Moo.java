@@ -2,7 +2,7 @@ package com.os.operadno.moo;
 
 import android.util.Log;
 
-public class Moo {
+public final class Moo {
 
     public static void v(String tag, String msg) {
         Log.v(tag, msg);
