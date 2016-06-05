@@ -62,7 +62,7 @@ install {
     repositories.mavenInstaller {
         pom {
             project {
-                packaging 'jar'
+                packaging 'aar'
                 name 'moo-no-op'
                 url siteUrl
                 licenses {
