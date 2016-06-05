@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.os.operadno.moo">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true" />
+</manifest>
