@@ -4,6 +4,9 @@ import android.util.Log;
 
 public final class Moo {
 
+    private Moo() {
+    }
+
     public static void v(String tag, String msg) {
         Log.v(tag, msg);
     }

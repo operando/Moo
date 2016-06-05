@@ -2,6 +2,9 @@ package com.os.operadno.moo;
 
 public final class Moo {
 
+    private Moo() {
+    }
+
     public static void v(String tag, String msg) {
     }
 
