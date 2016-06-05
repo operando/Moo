@@ -36,6 +36,6 @@ Moo.d(TAG, Moo.getStackTraceString(new Exception("test getStackTraceString")));
 
 Gradle:
 ```groovy
-debugCompile 'com.os.operando.moo:moo:0.1.0'
-releaseCompile 'com.os.operando.moo:moo-no-op:0.1.0'
+debugCompile 'com.os.operando.moo:moo:0.2.0'
+releaseCompile 'com.os.operando.moo:moo-no-op:0.2.0'
 ```
